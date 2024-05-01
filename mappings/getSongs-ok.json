@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/songs"
+  },
+  "response":{
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "getSongs-ok.json"
+  }
+}

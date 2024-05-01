@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/artists"
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "postArtists-ok.json"
+  }
+}

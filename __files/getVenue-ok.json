@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "venueName": "Liverpool Arena",
+  "city": "Liverpool",
+  "capacity": 11000,
+  "foundationDate": "2008-01-12",
+  "adapted": true,
+  "latitude": 53.396667,
+  "longitude": -2.990958,
+  "editions": [
+    {
+      "id": 1,
+      "editionNum": 67,
+      "romanNumeralEdition": "LXVII",
+      "countryOrganizer": "United Kingdom",
+      "finalDate": "2023-05-13",
+      "slogan": "United by Music",
+      "cancelled": false,
+      "totalBudget": 50000.32
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/editions",
+    "bodyPatterns": [{
+      "equalToJson":{
+        "editionNum": 67,
+        "romanNumeralEdition": "LXVII",
+        "countryOrganizer": "United Kingdom",
+        "finalDate": "2023-05-13",
+        "slogan": "United by Music",
+        "cancelled": false,
+        "venueId": 2
+      }
+    }]
+  },
+  "response": {
+    "status": 403,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "forbidden.json"
+  }
+}

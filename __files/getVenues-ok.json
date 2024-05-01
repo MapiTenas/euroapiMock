@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "venueName": "Liverpool Arena",
+    "city": "Liverpool",
+    "capacity": 11000,
+    "foundationDate": "2008-01-12",
+    "adapted": true,
+    "latitude": 53.396667,
+    "longitude": -2.990958,
+    "editions": [
+      {
+        "id": 1,
+        "editionNum": 67,
+        "romanNumeralEdition": "LXVII",
+        "countryOrganizer": "United Kingdom",
+        "finalDate": "2023-05-13",
+        "slogan": "United by Music",
+        "cancelled": false,
+        "totalBudget": 50000.32
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "venueName": "Expo Tel Aviv",
+    "city": "Tel Aviv",
+    "capacity": 10000,
+    "foundationDate": "1959-01-01",
+    "adapted": true,
+    "latitude": 32.115,
+    "longitude": 34.782,
+    "editions": [
+      {
+        "id": 98,
+        "editionNum": 64,
+        "romanNumeralEdition": "LXIV",
+        "countryOrganizer": "Israel",
+        "finalDate": "2019-05-18",
+        "slogan": "Dare to Dream",
+        "cancelled": false,
+        "totalBudget": 2.8E7
+      }
+    ]
+  },
+  {
+    "id": 193,
+    "venueName": "B&W Hallerne",
+    "city": "Copenhagen",
+    "capacity": 10000,
+    "foundationDate": "1961-04-15",
+    "adapted": true,
+    "latitude": 55.7102,
+    "longitude": 12.5849,
+    "editions": [
+      {
+        "id": 161,
+        "editionNum": 59,
+        "romanNumeralEdition": "LIX",
+        "countryOrganizer": "Denmark",
+        "finalDate": "2014-05-10",
+        "slogan": "Join Us",
+        "cancelled": false,
+        "totalBudget": 3.1E7
+      }
+    ]
+  }
+]

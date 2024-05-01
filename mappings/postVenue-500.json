@@ -1,0 +1,25 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/venues",
+    "bodyPatterns": [{
+      "equalToJson":{
+        "venueName": "Liverpool Arena",
+        "city": "Liverpool",
+        "capacity": 11000,
+        "foundationDate": "2008-01-12",
+        "adapted": true,
+        "latitude": 53.396667,
+        "longitude": -2.990958
+      }
+    }]
+  },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "internalServerError.json"
+  }
+}

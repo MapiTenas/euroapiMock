@@ -1,0 +1,76 @@
+[
+  {
+    "id": 35,
+    "countryName": "Spain",
+    "bigFive": true,
+    "editionsWinned": 2,
+    "publicBroadcaster": "RTVE",
+    "songs": [
+      {
+        "id": 290,
+        "title": "SloMo",
+        "duration": 4.02,
+        "language": "English / Spanish",
+        "votes": 312,
+        "winner": false,
+        "admissionDate": "2021-02-15"
+      },
+      {
+        "id": 291,
+        "title": "La La La",
+        "duration": 3.15,
+        "language": "Spanish",
+        "votes": 450,
+        "winner": false,
+        "admissionDate": "1968-09-28"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "countryName": "United Kingdom",
+    "bigFive": true,
+    "editionsWinned": 5,
+    "publicBroadcaster": "BBC",
+    "songs": [
+      {
+        "id": 289,
+        "title": "Space Man",
+        "duration": 3.41,
+        "language": "English",
+        "votes": 500,
+        "winner": false,
+        "admissionDate": "2022-03-07"
+      },
+      {
+        "id": 321,
+        "title": "Embers",
+        "duration": 3.00,
+        "language": "English",
+        "votes": 0,
+        "winner": false,
+        "admissionDate": "2021-05-20"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "countryName": "Netherlands",
+    "bigFive": false,
+    "editionsWinned": 5,
+    "publicBroadcaster": "AVROTROS",
+    "songs": [
+      {
+        "id": 257,
+        "title": "Arcade",
+        "duration": 3.41,
+        "language": "English",
+        "votes": 231,
+        "winner": true,
+        "admissionDate": "2019-03-07"
+      }
+    ]
+
+  }
+
+]

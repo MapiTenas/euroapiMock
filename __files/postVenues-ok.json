@@ -1,0 +1,10 @@
+{
+  "id": 34,
+  "venueName": "Expo Tel Aviv",
+  "city": "Tel Aviv",
+  "capacity": 10000,
+  "foundationDate": "1959-01-01",
+  "adapted": true,
+  "latitude": 32.115,
+  "longitude": 34.782
+}

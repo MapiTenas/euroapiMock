@@ -1,0 +1,27 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/songs",
+    "bodyPatterns": [{
+      "equalToJson":{
+        "te": "Space Man",
+        "duration": 3.41,
+        "langauage": "English",
+        "votes": 531,
+        "winner": false,
+        "admissionDate": "2022-03-07",
+        "arstId": 321,
+        "countryId": 1,
+        "editionId": 1
+      }
+    }]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "badRequest.json"
+  }
+}

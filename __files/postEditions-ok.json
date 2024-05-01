@@ -1,0 +1,19 @@
+{
+  "id": 56,
+  "editionNum": 56,
+  "romanNumeralEdition": "LVI",
+  "countryOrganizer": "Germany",
+  "finalDate": "2011-05-14",
+  "slogan": "Feel Your Heart Beat!",
+  "cancelled": false,
+  "venueId": {
+    "id": 1,
+    "venueName": "ESPRIT Arena",
+    "city": "Düsseldorf",
+    "capacity": 23122,
+    "foundationDate": "2004-01-12",
+    "adapted": true,
+    "latitude": 51.15421,
+    "longitude": -2.990958
+  }
+}

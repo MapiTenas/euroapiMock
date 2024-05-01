@@ -1,0 +1,62 @@
+[
+  {
+    "id":1,
+    "name": "Duncan Laurence",
+    "birthDate": "1994-04-11",
+    "originCountry": "Netherlands",
+    "publishedCds": 1,
+    "active": true,
+    "igFollowers": 913912.0,
+    "songs": [
+      {
+        "id": 1,
+        "title": "Arcade",
+        "duration": 3.41,
+        "language": "English",
+        "votes": 231,
+        "winner": true,
+        "admissionDate": "2019-03-07"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Eleni Foureira",
+    "birthDate": "1987-03-07",
+    "originCountry": "Greece",
+    "publishedCds": 2,
+    "active": true,
+    "igFollowers": 2200000.0,
+    "songs": [
+      {
+        "id": 2,
+        "title": "Fuego",
+        "duration": 3.04,
+        "language": "English",
+        "votes": 312,
+        "winner": false,
+        "admissionDate": "2018-04-18"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mans Zelmerlöw",
+    "birthDate": "1986-06-13",
+    "originCountry": "Sweden",
+    "publishedCds": 5,
+    "active": true,
+    "igFollowers": 1200000.0,
+    "songs": [
+      {
+        "id": 4,
+        "title": "Heroes",
+        "duration": 3.10,
+        "language": "English",
+        "votes": 498,
+        "winner": true,
+        "admissionDate": "2015-03-12"
+      }
+    ]
+  }
+]

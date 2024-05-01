@@ -1,0 +1,25 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/venues",
+    "bodyPatterns": [{
+      "equalToJson":{
+        "venueame": "Expo Tel Aviv",
+        "ity": "Tel Aviv",
+        "capacity": 10000,
+        "foundationDate": "1959-01-01",
+        "adapted": true,
+        "latitude": 32.115,
+        "longitude": 34.782
+      }
+    }]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "badRequest.json"
+  }
+}

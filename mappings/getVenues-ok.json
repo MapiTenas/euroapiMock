@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/venues"
+  },
+  "response":{
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "getVenues-ok.json"
+  }
+}

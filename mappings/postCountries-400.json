@@ -1,0 +1,24 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/countries",
+    "bodyPatterns": [{
+      "equalToJson":{
+        "countryName": "Italy",
+        "bigive": true,
+        "editionsWinned": 2,
+        "pubcBroadcaster": "RAI",
+        "participationFee": 123110.0,
+        "joiningDate": "1956-03-31"
+      }
+    }]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "badRequest.json"
+  }
+}

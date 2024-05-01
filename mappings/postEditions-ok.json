@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/editions"
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "postEditions-ok.json"
+  }
+}

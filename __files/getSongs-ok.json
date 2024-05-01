@@ -1,0 +1,76 @@
+[
+  {
+    "id": 257,
+    "title": "Arcade",
+    "duration": 3.41,
+    "language": "English",
+    "votes": 231,
+    "winner": true,
+    "admissionDate": "2019-03-07",
+    "artist": {
+      "id": 129,
+      "name": "Duncan Laurence",
+      "birthDate": "1994-04-11",
+      "originCountry": "Netherlands",
+      "publishedCds": 1,
+      "active": true,
+      "igFollowers": 398000.0
+    },
+    "country": {
+      "id": 97,
+      "countryName": "Netherlands",
+      "bigFive": false,
+      "editionsWinned": 5,
+      "publicBroadcaster": "AVROTROS",
+      "participationFee": 160000.0,
+      "joiningDate": "1956-05-24"
+    },
+    "edition": {
+      "id": 35,
+      "editionNum": 65,
+      "romanNumeralEdition": "LXV",
+      "countryOrganizer": "The Netherlands",
+      "finalDate": "2020-05-16",
+      "slogan": "Open Up",
+      "cancelled": true,
+      "totalBudget": 75000.75
+    }
+  },
+  {
+    "id": 289,
+    "title": "Space Man",
+    "duration": 3.41,
+    "language": "English",
+    "votes": 500,
+    "winner": false,
+    "admissionDate": "2022-03-07",
+    "artist": {
+      "id": 321,
+      "name": "Sam Ryder",
+      "birthDate": "1986-06-20",
+      "originCountry": "United Kingdom",
+      "publishedCds": 1,
+      "active": true,
+      "igFollowers": 21000.0
+    },
+    "country": {
+      "id": 1,
+      "countryName": "United Kingdom",
+      "bigFive": true,
+      "editionsWinned": 5,
+      "publicBroadcaster": "BBC",
+      "participationFee": 250000.0,
+      "joiningDate": "1957-05-09"
+    },
+    "edition": {
+      "id": 1,
+      "editionNum": 67,
+      "romanNumeralEdition": "LXVII",
+      "countryOrganizer": "United Kingdom",
+      "finalDate": "2023-05-13",
+      "slogan": "United by Music",
+      "cancelled": false,
+      "totalBudget": 50000.32
+    }
+  }
+]

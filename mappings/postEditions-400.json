@@ -1,0 +1,26 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/editions",
+    "bodyPatterns": [{
+      "equalToJson":{
+        "editioNum": 56,
+        "romanNumeralEdition": "LVI",
+        "countryOrganizer": "Germany",
+        "finalDate": "2011-05-14",
+        "slogan": "Feel Your Heart Beat!",
+        "canceld": false,
+        "totalBudget": 3000000.45,
+        "venueId": 1
+      }
+    }]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "badRequest.json"
+  }
+}

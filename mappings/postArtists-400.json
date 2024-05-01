@@ -1,0 +1,24 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/artists",
+    "bodyPatterns": [{
+      "equalToJson":{
+        "nae": "Sam Ryder",
+        "birthate": "1986-06-20",
+        "originCountry": "United Kingdom",
+        "publishedCds": 1,
+        "active": true,
+        "igFollowers": 21000.0
+      }
+    }]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "badRequest.json"
+  }
+}

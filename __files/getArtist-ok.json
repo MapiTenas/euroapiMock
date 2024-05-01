@@ -1,0 +1,20 @@
+{
+  "id":1,
+  "name": "Duncan Laurence",
+  "birthDate": "1994-04-11",
+  "originCountry": "Netherlands",
+  "publishedCds": 1,
+  "active": true,
+  "igFollowers": 913912.0,
+  "songs": [
+    {
+      "id": 1,
+      "title": "Arcade",
+      "duration": 3.41,
+      "language": "English",
+      "votes": 231,
+      "winner": true,
+      "admissionDate": "2019-03-07"
+    }
+  ]
+}

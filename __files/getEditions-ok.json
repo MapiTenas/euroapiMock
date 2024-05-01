@@ -1,0 +1,62 @@
+[
+  {
+    "id": 35,
+    "editionNum": 65,
+    "romanNumeralEdition": "LXV",
+    "countryOrganizer": "The Netherlands",
+    "finalDate": "2020-05-16",
+    "slogan": "Open Up",
+    "cancelled": true,
+    "venue": {
+      "id": 129,
+      "venueName": "Ahoy Rotterdam",
+      "city": "Rotterdam",
+      "capacity": 20000,
+      "foundationDate": "2008-01-01",
+      "adapted": true,
+      "latitude": 32.115,
+      "longitude": 34.782
+    },
+    "songs": [
+      {
+        "id": 257,
+        "title": "Arcade",
+        "duration": 3.41,
+        "language": "English",
+        "votes": 231,
+        "winner": true,
+        "admissionDate": "2019-03-07"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "editionNum": 64,
+    "romanNumeralEdition": "LXIV",
+    "countryOrganizer": "Israel",
+    "finalDate": "2019-05-18",
+    "slogan": "Dare to Dream",
+    "cancelled": false,
+    "venue": {
+      "id": 129,
+      "venueName": "Expo Tel Aviv",
+      "city": "Tel Aviv",
+      "capacity": 10000,
+      "foundationDate": "1959-01-01",
+      "adapted": true,
+      "latitude": 32.115,
+      "longitude": 34.782
+    },
+    "songs": [{
+      "id": 257,
+      "title": "Hatrid Mun Sigra",
+      "duration": 3.41,
+      "language": "Icelandic",
+      "votes": 231,
+      "winner": false,
+      "admissionDate": "2019-03-07"
+    }]
+
+
+  }
+]

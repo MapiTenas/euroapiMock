@@ -1,0 +1,27 @@
+{
+  "id": 35,
+  "countryName": "Spain",
+  "bigFive": true,
+  "editionsWinned": 2,
+  "publicBroadcaster": "RTVE",
+  "songs": [
+    {
+      "id": 290,
+      "title": "SloMo",
+      "duration": 4.02,
+      "language": "English / Spanish",
+      "votes": 312,
+      "winner": false,
+      "admissionDate": "2021-02-15"
+    },
+    {
+      "id": 291,
+      "title": "La La La",
+      "duration": 3.15,
+      "language": "Spanish",
+      "votes": 450,
+      "winner": false,
+      "admissionDate": "1968-09-28"
+    }
+  ]
+}

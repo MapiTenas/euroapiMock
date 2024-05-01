@@ -1,0 +1,37 @@
+{
+  "id": 289,
+  "title": "Space Man",
+  "duration": 3.41,
+  "language": "English",
+  "votes": 500,
+  "winner": false,
+  "admissionDate": "2022-03-07",
+  "artist": {
+    "id": 321,
+    "name": "Sam Ryder",
+    "birthDate": "1986-06-20",
+    "originCountry": "United Kingdom",
+    "publishedCds": 1,
+    "active": true,
+    "igFollowers": 21000.0
+  },
+  "country": {
+    "id": 1,
+    "countryName": "United Kingdom",
+    "bigFive": true,
+    "editionsWinned": 5,
+    "publicBroadcaster": "BBC",
+    "participationFee": 250000.0,
+    "joiningDate": "1957-05-09"
+  },
+  "edition": {
+    "id": 1,
+    "editionNum": 67,
+    "romanNumeralEdition": "LXVII",
+    "countryOrganizer": "United Kingdom",
+    "finalDate": "2023-05-13",
+    "slogan": "United by Music",
+    "cancelled": false,
+    "totalBudget": 50000.32
+  }
+}
