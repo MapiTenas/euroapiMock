@@ -1,0 +1,1540 @@
+{
+	"info": {
+		"_postman_id": "02b4abb9-8045-479a-a5e4-4fd327a43590",
+		"name": "euroapimock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31328466"
+	},
+	"item": [
+		{
+			"name": "artists",
+			"item": [
+				{
+					"name": "artist ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/artist/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artist",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artist not found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/artist/4",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artist",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artist internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/artist/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artist",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artists ok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sam Ryder\",\r\n    \"birthDate\": \"1986-06-20\",\r\n    \"originCountry\": \"United Kingdom\",\r\n    \"publishedCds\": 1,\r\n    \"active\": true,\r\n    \"igFollowers\": 21000.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/artists",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artists bad request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nae\": \"Sam Ryder\",\r\n    \"birthate\": \"1986-06-20\",\r\n    \"originCountry\": \"United Kingdom\",\r\n    \"publishedCds\": 1,\r\n    \"active\": true,\r\n    \"igFollowers\": 21000.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/artists",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artists internal server error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Loreen\",\r\n    \"birthDate\": \"1986-06-20\",\r\n    \"originCountry\": \"Sweden\",\r\n    \"publishedCds\": 4,\r\n    \"active\": true,\r\n    \"igFollowers\": 2121000.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/artists",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artist ok",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/artist/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artist",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artist not found",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/artist/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artist",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artist internal server error",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/artist/6",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artist",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artist ok",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Loreen\",\r\n    \"birthDate\": \"1983-10-16\",\r\n    \"originCountry\": \"Sweden\",\r\n    \"publishedCds\": 2,\r\n    \"active\": true,\r\n    \"igFollowers\": 745000.0,\r\n    \"songs\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/artist/33",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artist",
+								"33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artist not found",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Loreen\",\r\n    \"birthDate\": \"1983-10-16\",\r\n    \"originCountry\": \"Sweden\",\r\n    \"publishedCds\": 2,\r\n    \"active\": true,\r\n    \"igFollowers\": 745000.0,\r\n    \"songs\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/artist/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artist",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artist bad request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Loreen\",\r\n    \"birthDate\": \"1983-10-16\",\r\n    \"originCountry\": \"Sweden\",\r\n    \"publishedCds\": 2,\r\n    \"active\": true,\r\n    \"igFollowers\": 745000.0,\r\n    \"songs\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/artist/6",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artist",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artists ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/artists",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "artists internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/artistsKO",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"artistsKO"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "countries",
+			"item": [
+				{
+					"name": "country ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/country/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"country",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "country not found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/country/4",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"country",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "country internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/country/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"country",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "countries ok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryName\": \"Italy\",\r\n    \"bigFive\": true,\r\n    \"editionsWinned\": 2,\r\n    \"publicBroadcaster\": \"RAI\",\r\n    \"participationFee\": 123110.0,\r\n    \"joiningDate\": \"1956-03-31\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/countries",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "countries bad request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryName\": \"Italy\",\r\n    \"bigive\": true,\r\n    \"editionsWinned\": 2,\r\n    \"pubcBroadcaster\": \"RAI\",\r\n    \"participationFee\": 123110.0,\r\n    \"joiningDate\": \"1956-03-31\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/countries",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "countries forbidden",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryName\": \"Spain\",\r\n    \"bigive\": true,\r\n    \"editionsWinned\": 2,\r\n    \"pubcBroadcaster\": \"RTVE\",\r\n    \"participationFee\": 121210.0,\r\n    \"joiningDate\": \"1958-03-31\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/countries",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "country ok",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/country/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"country",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "country not found",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/country/2",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"country",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "country forbidden",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/country/3",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"country",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "country ok",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryName\": \"Kingdom of Sweden\",\r\n    \"bigFive\": true,\r\n    \"editionsWinned\": 7,\r\n    \"publicBroadcaster\": \"SVT\",\r\n    \"participationFee\": 100500.0,\r\n    \"joiningDate\": \"1958-03-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/country/33",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"country",
+								"33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "country not found",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryName\": \"Kingdom of Sweden\",\r\n    \"bigFive\": true,\r\n    \"editionsWinned\": 7,\r\n    \"publicBroadcaster\": \"SVT\",\r\n    \"participationFee\": 100500.0,\r\n    \"joiningDate\": \"1958-03-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/country/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"country",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "country internal server error",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryName\": \"Kingdom of Sweden\",\r\n    \"bigFive\": true,\r\n    \"editionsWinned\": 7,\r\n    \"publicBroadcaster\": \"SVT\",\r\n    \"participationFee\": 100500.0,\r\n    \"joiningDate\": \"1958-03-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/country/6",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"country",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "countries ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/countries",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "countries internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/countriesKO",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"countriesKO"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "venues",
+			"item": [
+				{
+					"name": "venue ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/venue/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venue",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venue not found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/venue/2",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venue",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venue internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/venue/3",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venue",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venues ok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"venueName\": \"Expo Tel Aviv\",\r\n  \"city\": \"Tel Aviv\",\r\n  \"capacity\": 10000,\r\n  \"foundationDate\": \"1959-01-01\",\r\n  \"adapted\": true,\r\n  \"latitude\": 32.115,\r\n  \"longitude\": 34.782\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/venues",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venues bad request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"venueame\": \"Expo Tel Aviv\",\r\n        \"ity\": \"Tel Aviv\",\r\n        \"capacity\": 10000,\r\n        \"foundationDate\": \"1959-01-01\",\r\n        \"adapted\": true,\r\n        \"latitude\": 32.115,\r\n        \"longitude\": 34.782\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/venues",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venues internal server error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"venueName\": \"Liverpool Arena\",\r\n    \"city\": \"Liverpool\",\r\n    \"capacity\": 11000,\r\n    \"foundationDate\": \"2008-01-12\",\r\n    \"adapted\": true,\r\n    \"latitude\": 53.396667,\r\n    \"longitude\": -2.990958\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/venues",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venue ok",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/venue/33",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venue",
+								"33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venue not found",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/venue/2",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venue",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venue bad request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/venue/3",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venue",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venue ok",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"venueName\":\"Liverpool Arena\",\r\n    \"city\":\"Liverpool\",\r\n    \"capacity\": 11000,\r\n    \"foundationDate\":\"2008-01-12\",\r\n    \"adapted\": true,\r\n    \"latitude\":53.396667,\r\n    \"longitude\":-2.990958\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/venue/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venue",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venue not found",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"venueName\":\"Liverpool Arena\",\r\n    \"city\":\"Liverpool\",\r\n    \"capacity\": 11000,\r\n    \"foundationDate\":\"2008-01-12\",\r\n    \"adapted\": true,\r\n    \"latitude\":53.396667,\r\n    \"longitude\":-2.990958\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/venue/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venue",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venue internal server error",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"venueName\":\"Liverpool Arena\",\r\n    \"city\":\"Liverpool\",\r\n    \"capacity\": 11000,\r\n    \"foundationDate\":\"2008-01-12\",\r\n    \"adapted\": true,\r\n    \"latitude\":53.396667,\r\n    \"longitude\":-2.990958\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/venue/6",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venue",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venues ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/venues",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venues internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/venuesKO",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"venuesKO"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "editions",
+			"item": [
+				{
+					"name": "edition ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/edition/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"edition",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edition not found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/edition/2",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"edition",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edition internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/edition/3",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"edition",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edition ok",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/edition/33",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"edition",
+								"33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edition not found",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/edition/76",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"edition",
+								"76"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edition bad request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/edition/77",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"edition",
+								"77"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editions ok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"editionNum\": 56,\r\n    \"romanNumeralEdition\": \"LVI\",\r\n    \"countryOrganizer\": \"Germany\",\r\n    \"finalDate\": \"2011-05-14\",\r\n    \"slogan\": \"Feel Your Heart Beat!\",\r\n    \"cancelled\": false,\r\n    \"venueId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/editions",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"editions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editions bad request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"editioNum\": 56,\r\n        \"romanNumeralEdition\": \"LVI\",\r\n        \"countryOrganizer\": \"Germany\",\r\n        \"finalDate\": \"2011-05-14\",\r\n        \"slogan\": \"Feel Your Heart Beat!\",\r\n        \"canceld\": false,\r\n        \"totalBudget\": 3000000.45,\r\n        \"venueId\": 1\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/editions",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"editions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editions forbidden",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"editionNum\": 67,\r\n    \"romanNumeralEdition\": \"LXVII\",\r\n    \"countryOrganizer\": \"United Kingdom\",\r\n    \"finalDate\": \"2023-05-13\",\r\n    \"slogan\": \"United by Music\",\r\n    \"cancelled\": false,\r\n    \"venueId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/editions",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"editions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edition ok",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"editionNum\": 62,\r\n    \"romanNumeralEdition\": \"LXVII\",\r\n    \"countryOrganizer\": \"United Kingdom\",\r\n    \"finalDate\": \"2023-05-13\",\r\n    \"slogan\": \"United by Music\",\r\n    \"cancelled\": false,\r\n    \"totalBudget\": 50000.32,\r\n    \"venueId\": 1 \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/edition/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"edition",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edition not found",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"editionNum\": 41,\r\n    \"romanNumeralEdition\": \"LXII\",\r\n    \"countryOrganizer\": \"Ukraine\",\r\n    \"finalDate\": \"2017-05-13\",\r\n    \"slogan\": \"Celebrate diversity\",\r\n    \"cancelled\": false,\r\n    \"totalBudget\": 500213.32,\r\n    \"venueId\": 1 \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/edition/2",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"edition",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edition bad request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"editionNum\": 41,\r\n    \"romanNumeralEtion\": \"LXII\",\r\n    \"countryOrganizer\": \"Ukraine\",\r\n    \"finalDate\": \"2017-05-13\",\r\n    \"slon\": \"Celebrate diversity\",\r\n    \"cancelled\": false,\r\n    \"totalBudget\": 500213.32,\r\n    \"venueId\": 1 \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/edition/3",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"edition",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editions ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/editions",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"editions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editions internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/editionsKO",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"editionsKO"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "songs",
+			"item": [
+				{
+					"name": "song ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/song/257",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"song",
+								"257"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "song not found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/song/4",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"song",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "song internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/song/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"song",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "song ok",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/song/55",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"song",
+								"55"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "song not found",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/song/56",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"song",
+								"56"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "song internal server error",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/song/67",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"song",
+								"67"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "songs ok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Space Man\",\r\n    \"duration\": 3.41,\r\n    \"language\": \"English\",\r\n    \"votes\": 531,\r\n    \"winner\": false,\r\n    \"admissionDate\": \"2022-03-07\",\r\n    \"artistId\": 321,\r\n    \"countryId\": 1,\r\n    \"editionId\": 1 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/songs",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"songs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "songs bad request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"te\": \"Space Man\",\r\n    \"duration\": 3.41,\r\n    \"langauage\": \"English\",\r\n    \"votes\": 531,\r\n    \"winner\": false,\r\n    \"admissionDate\": \"2022-03-07\",\r\n    \"arstId\": 321,\r\n    \"countryId\": 1,\r\n    \"editionId\": 1 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/songs",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"songs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "songs internal server error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"title\": \"Euphoria\",\r\n        \"duration\": 3.11,\r\n        \"language\": \"English\",\r\n        \"votes\": 431,\r\n        \"winner\": true,\r\n        \"admissionDate\": \"2011-03-07\",\r\n        \"artistId\": 311,\r\n        \"countryId\": 2,\r\n        \"editionId\": 2\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/songs",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"songs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "song ok",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Arcade\",\r\n    \"duration\": 3.41,\r\n    \"language\": \"English\",\r\n    \"votes\": 231,\r\n    \"winner\": true,\r\n    \"admissionDate\": \"2019-03-07\",\r\n    \"artistId\": 129,\r\n    \"countryId\": 97,\r\n    \"editionId\": 35 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/song/257",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"song",
+								"257"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "song not found",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"La Venda\",\r\n    \"duration\": 2.5,\r\n    \"language\": \"Spanish\",\r\n    \"votes\": 111,\r\n    \"winner\": false,\r\n    \"admissionDate\": \"2019-03-12\",\r\n    \"artistId\": 98,\r\n    \"countryId\": 3,\r\n    \"editionId\": 65 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/song/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"song",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "song internal server error",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"La Venda\",\r\n    \"duration\": 2.5,\r\n    \"language\": \"Spanish\",\r\n    \"votes\": 111,\r\n    \"winner\": false,\r\n    \"admissionDate\": \"2019-03-12\",\r\n    \"artistId\": 98,\r\n    \"countryId\": 3,\r\n    \"editionId\": 65 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/song/6",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"song",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "songs ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/songs",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"songs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "songs internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/songsKO",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"songsKO"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
